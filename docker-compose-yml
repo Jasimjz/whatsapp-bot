@@ -1,0 +1,10 @@
+version: version
+services:
+  worker:
+    build: .
+    environment:
+      ASENA_SESSION :$ASENA_SESSION
+      SUDO: $ASENA_SESSION
+      HANDLERS: $HANDLERS
+      STICKER_PACKNAME: $STICKER_PACKNAME
+      
